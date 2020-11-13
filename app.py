@@ -1,26 +1,39 @@
-import turtle
+# odd number
+# for i in range(0, 100):
+#     if i % 2 == 1:
+#         print(i)
 
-jahid_turtle = turtle.Turtle()
+# function at python
+def sum(x, y):
+    return x*y
+print(sum(2, 8))
 
-def square():
-    print(jahid_turtle.forward(100))
-    print(jahid_turtle.right(90))
-    print(jahid_turtle.forward(100))
-    print(jahid_turtle.right(90))
-    print(jahid_turtle.forward(100))
-    print(jahid_turtle.right(90))
-    print(jahid_turtle.forward(100))
+# lambda function at python
+def i_am_lambda(x, y): return x+y
+print(i_am_lambda(2, 4))
 
-# square()
-# print(jahid_turtle.forward(200))
-# square()
+# object oriented python
+#class
+class MyFirstClass:
+    a= ""
+    b=""
 
-# jahid = "happy"
+    def plus(self):
+        return self.a + self.b
 
-# while jahid == "happy" :
-#     square()
+f_class = MyFirstClass()
+f_class.a = 10
+f_class.b =4
+print(f_class.plus())
 
-for count in range(4):
-    square()
+#class constructor method
+class My_Magic:
+    def __init__(self, name, do):
+        self.name = name
+        self.do = do
 
+    def show_me(self):
+        print("Name is " + self.name + " Do is " + self.do )
 
+cons_one = My_Magic("Rahul", "Farmer")
+cons_one.show_me()
